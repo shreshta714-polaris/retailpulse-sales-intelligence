@@ -1,0 +1,18 @@
+{
+  "source_file": "SuperStore_Orders_original.csv",
+  "source_rows": 51290,
+  "source_columns": 21,
+  "source_unique_order_ids": 25035,
+  "source_unique_product_ids": 10292,
+  "unique_product_records_by_product_id_name_category_subcategory": 10768,
+  "unique_customers": 795,
+  "unique_geography_combinations": 1126,
+  "duplicate_source_rows": 0,
+  "product_ids_with_multiple_product_names": 457,
+  "date_shift": "+11 calendar years; 2011-2014 -> 2022-2025",
+  "synthetic_supplier_count": 80,
+  "synthetic_product_supplier_assignments": 10768,
+  "sales_parse_nulls_after_cleaning": 0,
+  "fact_rows": 51290,
+  "note": "Supplier attributes and product-supplier assignments are simulated, not observed source data."
+}
