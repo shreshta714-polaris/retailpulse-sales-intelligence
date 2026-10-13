@@ -1,0 +1,14 @@
+file,field,definition
+fact_sales.csv,order_id,Source order identifier; can repeat for multiple line items.
+fact_sales.csv,order_date / ship_date,Source dates shifted forward 11 years; YYYY-MM-DD.
+fact_sales.csv,product_key,Generated surrogate key to uniquely identify product records; safer than source product_id alone.
+fact_sales.csv,customer_key,Generated surrogate key for customer name + segment.
+fact_sales.csv,geography_key,Generated surrogate key for country + state + market + region.
+fact_sales.csv,"sales, quantity, discount, profit, shipping_cost",Source measures; sales parsed as numeric.
+dim_product.csv,product_key,Unique generated product record key.
+dim_product.csv,product_id,Source product ID; not unique to product_name in this source.
+dim_customer.csv,customer_key,Generated key for customer name + segment.
+dim_geography.csv,geography_key,Generated key for a distinct geography combination.
+dim_date.csv,date_key,YYYYMMDD integer key.
+dim_supplier_synthetic.csv,simulated_*,"Synthetic supplier attributes, not measured values."
+bridge_product_supplier_synthetic.csv,supplier_id,Synthetic assignment of a product to one illustrative supplier.
